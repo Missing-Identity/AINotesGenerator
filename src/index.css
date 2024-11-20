@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased bg-gray-50;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-none;
+  }
+  
+  .prose h1 {
+    @apply text-3xl font-bold mb-6 text-gray-900;
+  }
+  
+  .prose h2 {
+    @apply text-2xl font-semibold mb-4 text-gray-800 mt-8 pb-2 border-b border-gray-200;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-medium mb-3 text-gray-800 mt-6;
+  }
+  
+  .prose p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+  
+  .prose ul {
+    @apply space-y-2 my-4 list-disc ml-6;
+  }
+  
+  .prose ol {
+    @apply space-y-2 my-4 list-decimal ml-6;
+  }
+  
+  .prose li {
+    @apply text-gray-700 pl-2;
+  }
+  
+  .prose li > ul,
+  .prose li > ol {
+    @apply my-2 ml-6;
+  }
+  
+  .prose table {
+    @apply min-w-full my-6 border-collapse bg-white shadow-sm rounded-lg overflow-hidden;
+  }
+  
+  .prose thead {
+    @apply bg-gray-50;
+  }
+  
+  .prose th {
+    @apply px-4 py-3 text-left text-sm font-semibold text-gray-900 border-b border-gray-200;
+  }
+  
+  .prose td {
+    @apply px-4 py-3 text-sm text-gray-700 border-b border-gray-200;
+  }
+  
+  .prose tr:last-child td {
+    @apply border-b-0;
+  }
+  
+  .prose blockquote {
+    @apply pl-4 border-l-4 border-indigo-200 italic text-gray-600 my-4 bg-indigo-50/30 py-2 pr-4 rounded-r;
+  }
+  
+  .prose code {
+    @apply px-1.5 py-0.5 bg-gray-100 rounded text-sm font-mono text-gray-800;
+  }
+  
+  .prose pre {
+    @apply p-4 bg-gray-800 rounded-lg overflow-x-auto text-gray-100 my-4;
+  }
+  
+  .prose pre code {
+    @apply bg-transparent text-inherit p-0;
+  }
+  
+  .prose hr {
+    @apply my-8 border-gray-200;
+  }
+}
