@@ -1,5 +1,3 @@
-Here’s a professional and detailed README for your project:
-
 ---
 
 # **AINotesGenerator**
