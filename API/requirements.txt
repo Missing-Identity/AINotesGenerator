@@ -1,0 +1,8 @@
+fastapi
+openai
+tiktoken
+uvicorn
+google-generativeai
+python-dotenv
+pydantic
+ollama
